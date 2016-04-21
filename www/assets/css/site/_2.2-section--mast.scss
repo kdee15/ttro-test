@@ -7,7 +7,7 @@
 #mast {
     
     .wrapper { position: relative; top: 100%; }
-    .section { padding: 60px 0; }
+    .section { }
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 
 @include media-query(feature) { 
 
-    #mast { padding-right: 0; }
+    #mast {}
 
 }
 
@@ -28,13 +28,7 @@
 
 @include media-query(mobile) { 
 	
-    #mast {
-        
-        padding-right: 0;
-
-        .section { padding: 60px 0; }
-
-    }
+    #mast {}
 }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -43,7 +37,7 @@
 
 @include media-query(tablet) { 
 
-    #mast { padding-right: 0px; }
+    #mast {}
 
 }
 
@@ -53,7 +47,7 @@
 
 @include media-query(desk) { 
 
-    #mast { padding-right: 60px; }
+    #mast {}
 
 }
 
@@ -63,7 +57,7 @@
 
 @include media-query(desk-wide) { 
 
-    #mast { padding-right: 60px; }
+    #mast {}
 
 }
 
