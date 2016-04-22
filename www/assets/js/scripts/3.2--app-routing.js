@@ -21,15 +21,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
         $stateProvider
 
-            // A.1. HOME PAGE -----------------------------------------------------------------------------------------
+                // A.1. ANONYMOUS ROUTING -----------------------------------------------------------------------------
 
-            .state('home', {
-                url: '/home',
-                templateUrl: 'pages/landing.html',
+                .state('home', {
+                    url: '/home',
+                    templateUrl: 'index.html'
+                })
 
-            })
+
         
-            // A.1. END
+        // A.3.8. END
 
         // A.3. END ---------------------------------------------------------------------------------------------------
 

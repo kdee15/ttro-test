@@ -9,17 +9,17 @@
 // ==
 // == 1. OBJECTS
 // ===== 0.1. Variables
+// ===== 0.1.1. Fonts
 // ===== 1.0. Mixins
-// ===== 1.0.1. Custom Mixins
-// ===== 1.0.2. Grids
-// ===== 1.1. Global
-// ===== 1.1.1. Parallax
+// ===== 1.0.1. Grids
+// ===== 1.1. Global CSS
+// ===== 1.1.1. Parallax CSS
+// ===== 1.1.2. Burger Menu
+// ===== 1.1.3. Social Media
 // ===== 1.2. Cards
-// ===== 1.2.1. Cards - Small
-// ===== 1.2.2. Cards - Medium
-// ===== 1.2.3. Cards - Big
-// ===== 1.2.4. Cards - Long
 // ===== 1.3. Icons
+// ===== 1.5. Inputs
+// ===== 1.6. carousel
 // ==
 // == 2. SECTIONS
 // ===== 2.1. Masthead
@@ -28,7 +28,6 @@
 // ==
 // == 3. PAGES
 // ===== 3.1. Homepage
-// ===== 3.2. Scroller
 // ==
 // =====================  INDEX  =====================
 
@@ -41,42 +40,30 @@
 // Each component should ideally be an isolated block
 // structure that can stand on it's own, and live in
 // in any context.
+
     // 0.1. Variables
     @import	"_0.1-config--variables";
+
+        // 0.1.1. Fonts
+        @import	"_0.1.1-config--fonts";
 
     // 1.0. MIXINS
     @import	"_1.0-object--mixins";
 
-        // 1.0.1. MIXINS
-        @import	"_1.0.1-object--custom-mixins";
-
         // 1.0.2. GRIDS
-        @import	"_1.0.2-object--grids";
+        @import	"_1.0.1-object--grids";
 
     // 1.1. Global CSS
     @import	"_1.1-object--global";
 
-        // 1.1.1. Parallax
-        @import	"_1.1.1-object--parallax";
-
-    // 1.2. CARDS
-    @import	"_1.2-object--cards";
-
-        // 1.2.1. CARDS: SMALL
-        @import	"_1.2.1-object--card-small";
-
-        // 1.2.2. CARDS: MEDIUM
-        @import	"_1.2.2-object--card-medium";
-
-        // 1.2.3. CARDS: BIG
-        @import	"_1.2.3-object--card-big";
-
-        // 1.2.4. CARDS: LONG
-        @import	"_1.2.4-object--card-long";
+        // 1.1.2. Burger Menu
+        @import	"_1.1.2-object--burger";
 
     // 1.3. ICONS
     @import	"_1.3-object--icons";
 
+    // 1.5. Buttons
+    @import	"_1.5-object--inputs";
 
 // 2. SECTIONS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -97,6 +84,21 @@
     // 2.3. FOOTEND
     @import	"_2.3-section--footend";
 
+    // 2.4. ABOUT
+    @import	"_2.4-section--front";
+
+    // 2.5. SERVICES
+    @import	"_2.5-section--intro";
+
+    // 2.6. ARTISTS
+    @import	"_2.6-section--squares";
+
+    // 2.7. DETAILS
+    @import	"_2.7-section--details";
+
+    // 2.7. IMAGE
+    @import	"_2.8-section--image";
+
 
 // 2. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -111,10 +113,6 @@
 
     // 3.1. Homepage
     @import	"_3.1-page--home";
-
-    // 3.2. Work
-    @import	"_3.2-page--scroller";
-
 
 // 3. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -1,30 +1,34 @@
-// 3. PAGE [ 3.0. HOME ]  #############################################################################################
+// 2. SECTION [ 2.7. CONTACT ]  #######################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
+// A.1. HOME ----------------------------------------------------------------------------------------------------------
 
-// A.1.1 LINKS
-
-
-// A.1.1. END
-
-
-
-// A.1. END -----------------------------------------------------------------------------------------------------------
-
-
+.section-intro {
+    
+    // A.2. END -------------------------------------------------------------------------------------------------------
+            
+    .left__aside { margin-top: -$baseline-large;
+    
+        .wrapper { }
+        
+    }
+    .right__aside { margin-top: $baseline;
+    
+        .wrapper { }
+        
+    }
+    
+    // A.2. END -------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(feature) {
-
-    // A.1.5. HIDE ON PHONES
-
-
-    // A.1.5. END
+@include media-query(feature) { 
+            
+    .left__aside { margin-top: 0; .wrapper { margin: $baseline-small; }}
+    .right__aside { .wrapper { margin: $baseline-small; }}
     
 }
 
@@ -32,32 +36,21 @@
 
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(mobile) {
-
-    .container {
-        
-        padding: 0;
-        
-    }
+@include media-query(mobile) { 
+            
+    .left__aside { margin-top: 0; .wrapper { margin: $baseline-small; }}
+    .right__aside { .wrapper { margin: $baseline-small; }}
     
-
-    // A.1.5. HIDE ON PHONES
-
-
-    // A.1.5. END
-    
-
 }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) {
-
-    // A.1.5. HIDE ON PHONES
-
-    // A.1.5. END
+@include media-query(tablet) { 
+            
+    .left__aside { .wrapper { margin: $baseline-small; }}
+    .right__aside { .wrapper { margin: $baseline-small; }}
     
 }
 
@@ -65,12 +58,10 @@
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk) {
-
-    // A.1.5. HIDE ON PHONES
-
-
-    // A.1.5. END
+@include media-query(desk) { 
+            
+    .left__aside { .wrapper { margin-right: $baseline-small; }}
+    .right__aside { .wrapper { margin-left: $baseline-small; }}
     
 }
 
@@ -78,15 +69,15 @@
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk-wide) {
-
-    // A.1.5. HIDE ON PHONES
-
-
-    // A.1.5. END
+@include media-query(desk-wide) { 
+            
+    .left__aside { .wrapper { margin-right: $baseline; }}
+    .right__aside { .wrapper { margin-left: $baseline; }}
     
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+}
 
 // END OF FILE ########################################################################################################

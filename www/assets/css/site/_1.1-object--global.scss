@@ -8,44 +8,62 @@ html { font-weight: 300; }
 
 // A.1. GENERAL SETUP
 
-html, body, #mast, .section-home, .container { height: 100%; }
+body {
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    
+}
 
-body { }
+figure { margin: 0;
+    
+    img { width: 100%; height: auto; }
+    
+}
 
 // A.1. END
 
 // A.2. TYPOGRAPHY SETUP
 
-h4, h6, ul, li, p { @include source-light(); }
-h1, h2 { @include libre-header(); }
-h3.big-title { text-transform: uppercase; }
-p { font-size: $medium; }
+h1 { font-size: $xx-large; font-family: "ssp-light", helvetica, "arial narrow"; }
+h2 { font-size: $x-large; font-family: "ssp-light", helvetica, "arial narrow"; line-height: normal; }
+p { font-size: $normal; font-family: "ssp-light", helvetica, "arial narrow"; }
 
 // A.2. END
+
+// A.1.1 LINKS
+
+a { cursor: pointer; }
+
+// A.1.1. END
 
 // A.1.2. SECTIONS
 
 .section { padding: 0; margin: 0; }
 
-// A.1. END -----------------------------------------------------------------------------------------------------------
+// A.1.2. END
 
-// A.2. CONTENT -------------------------------------------------------------------------------------------------------
+// A.1.3. GUTTER
 
-// A.2. END -----------------------------------------------------------------------------------------------------------
+.has-gutter {
+    
+    margin-left: -$baseline;
+
+    .grid-item { padding-left: $baseline; }
+}
+
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) {
-    
-    // E.1. Body backgrouind size
-    
-    body { background-size: auto 100%; }
-    
-    // E.1. END
 
-    // E.2. HIDE ON PHONES
+    // A.1.5. HIDE ON PHONES
+
     .no-mobile, .no-mobile-inline { display: none; }
 
     // A.1.5. END
@@ -64,14 +82,14 @@ p { font-size: $medium; }
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
-    
-    // E.1. Body backgrouind size
-    
-    body { background-size: auto 100%; }
-    
-    // E.1. END
 
-    // E.2. HIDE ON PHONES
+    .container {
+        
+        padding: 0;
+        
+    }
+
+    // A.1.5. HIDE ON PHONES
 
     .no-mobile, .no-mobile-inline { display: none; }
 
@@ -92,19 +110,13 @@ p { font-size: $medium; }
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(tablet) {
-    
-    // E.1. Body backgrouind size
-    
-    body { background-size: auto 100%; }
-    
-    // E.1. END
 
-    // E.2. HIDE ON PHONES
+    // A.1.5. HIDE ON PHONES
 
     .no-mobile { display: block; }
     .no-mobile-inline { display: flex; }
 
-    // E.2. END
+    // A.1.5. END
     
     // A.1.6. HEADERS
 
@@ -118,19 +130,13 @@ p { font-size: $medium; }
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk) {
-    
-    // E.1. Body backgrouind size
-    
-    body { background-size: 100% auto; }
-    
-    // E.1. END
 
-    // E.2. HIDE ON PHONES
+    // A.1.5. HIDE ON PHONES
 
     .no-mobile { display: block; }
     .no-mobile-inline { display: flex; }
 
-    // E.2. END
+    // A.1.5. END
     
     // A.1.6. HEADERS
 
@@ -144,25 +150,19 @@ p { font-size: $medium; }
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk-wide) {
-    
-    // E.1. Body backgrouind size
-    
-    body { background-size: 100% auto; }
-    
-    // E.1. END
 
-    // E.2. HIDE ON PHONES
+    // A.1.5. HIDE ON PHONES
 
     .no-mobile { display: block; }
     .no-mobile-inline { display: flex; }
 
-    // E.2. END
+    // A.1.5. END
     
-    // E.3. HEADERS
+    // A.1.6. HEADERS
 
     h1, h2 { font-size: 45px; }
     
-    // E.3. END
+    // A.1.6. END
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
