@@ -7,10 +7,16 @@
 // A.1.1 LINKS
 
 .smiley-face {
+    
+    margin: $baseline-medium auto;
+    
+    h2 { margin-left: $baseline; }
 
     .smiley { margin: $baseline auto; }
     
     .slide-me { margin: $baseline-small auto; max-width: 200px; }
+    
+    a { text-align: center; margin: $baseline auto; display: block; }
 
 }
 

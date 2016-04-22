@@ -362,7 +362,8 @@ html, body {
             flex: 0 0 91.666%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  .tablet--one-whole, #footend .links, #footend .social-media, #footend .logo, .section-squares .one-half, .section-squares .two-quarters, .section-squares .three-sixths, .section-squares .four-eighths, .section-squares .five-tenths, .section-squares .six-twelfths, .section-squares .tabs .tabs__header li, .tabs .tabs__header .section-squares li {
+  .tablet--one-whole, #footend .search,
+  #footend .links, .section-squares .one-half, .section-squares .two-quarters, .section-squares .three-sixths, .section-squares .four-eighths, .section-squares .five-tenths, .section-squares .six-twelfths, .section-squares .tabs .tabs__header li, .tabs .tabs__header .section-squares li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
@@ -1838,32 +1839,33 @@ input[type='select'] {
 #footend {
   background: #29315F;
   padding: 60px 0; }
-  #footend .links .half {
+  #footend .search .third,
+  #footend .links .third {
     display: inline-block;
     color: #fff;
     padding: 0;
     margin: 0 10px; }
-    #footend .links .half .header {
+    #footend .search .third .header,
+    #footend .links .third .header {
       color: #BBBBBB; }
-    #footend .links .half li {
+    #footend .search .third li,
+    #footend .links .third li {
       list-style-type: none;
       font-size: 0.75em; }
+  #footend .search span,
   #footend .links span {
     font-size: 0.625em;
     color: #fff;
     padding: 10px;
     display: block;
     opacity: 0.7; }
+  #footend .search p,
   #footend .links p {
     font-size: 0.75em;
     color: #fff;
     padding: 10px;
     display: block;
     opacity: 0.4; }
-  #footend .social-media {
-    position: relative; }
-  #footend .logo {
-    position: relative; }
   @media only screen and (max-width: 320px) {
     #footend .social-media {
       margin: 40px 0; }
@@ -1874,43 +1876,23 @@ input[type='select'] {
       width: 60%;
       margin: 0 auto; } }
   @media only screen and (min-width: 321px) and (max-width: 480px) {
-    #footend .social-media {
-      margin: 40px 0; }
-      #footend .social-media .figure__img {
-        width: 40%;
-        margin: 0 auto; }
-    #footend .logo .figure__img {
+    #footend .field-item {
       width: 60%;
-      margin: 0 auto; } }
+      margin: 10px; } }
   @media only screen and (min-width: 481px) and (max-width: 1023px) {
-    #footend .social-media {
-      margin: 80px 0; }
-      #footend .social-media .figure__img {
-        width: 30%;
-        margin: 0 auto; }
-    #footend .logo .figure__img {
-      width: 30%;
-      margin: 0 auto; } }
+    #footend .field-item {
+      width: 60%;
+      margin: 10px; } }
   @media only screen and (min-width: 1024px) {
-    #footend .social-media .figure__img,
-    #footend .logo .figure__img {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 80%;
-      left: 5%; } }
+    #footend .search .third,
+    #footend .links .third {
+      width: 28%; } }
   @media only screen and (min-width: 1200px) {
-    #footend .links .half {
-      width: 45%; }
-    #footend .social-media .figure__img,
-    #footend .logo .figure__img {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%); } }
+    #footend .search .third,
+    #footend .links .third {
+      width: 28%; }
+    #footend .field-item {
+      width: 60%; } }
 
 .section-front .container {
   position: relative; }
@@ -2308,12 +2290,19 @@ rzslider.rz-vertical .rz-ticks .rz-tick .rz-tick-value {
   .container {
     padding: 0; } }
 
-.smiley-face .smiley {
-  margin: 20px auto; }
-
-.smiley-face .slide-me {
-  margin: 10px auto;
-  max-width: 200px; }
+.smiley-face {
+  margin: 40px auto; }
+  .smiley-face h2 {
+    margin-left: 20px; }
+  .smiley-face .smiley {
+    margin: 20px auto; }
+  .smiley-face .slide-me {
+    margin: 10px auto;
+    max-width: 200px; }
+  .smiley-face a {
+    text-align: center;
+    margin: 20px auto;
+    display: block; }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
