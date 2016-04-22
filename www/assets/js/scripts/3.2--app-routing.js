@@ -21,14 +21,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
         $stateProvider
 
-                // A.1. ANONYMOUS ROUTING -----------------------------------------------------------------------------
+        // A.1. ANONYMOUS ROUTING -----------------------------------------------------------------------------
 
-                .state('home', {
-                    url: '/home',
-                    templateUrl: 'index.html'
-                })
+        .state('home', {
+            url: '/home',
+            templateUrl: 'page.home.html'
+        })
 
-
+        .state('slide', {
+            url: '/slide',
+            templateUrl: 'page.slide.html'
+        })
         
         // A.3.8. END
 

@@ -24,6 +24,7 @@ var app = angular.module('app', [
     'videosharing-embed',
     'ngVideoPreview',
     'duScroll',
+    'rzModule',
     'globalController'
 
 ]);

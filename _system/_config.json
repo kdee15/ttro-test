@@ -25,7 +25,8 @@
                 "angulartics/dist/angulartics.min.js",
                 "angulartics/dist/angulartics-ga.min.js",
                 "angular-scroll/angular-scroll.min.js",
-                "ionic-ion-horizontal-scroll-cards/ionic.hscrollcards.js"
+                "ionic-ion-horizontal-scroll-cards/ionic.hscrollcards.js",
+                "angularjs-slider/dist/rzslider.min.js"
 
             ],
             
@@ -49,7 +50,8 @@
                 "jquery.waypoints.min.js",
                 "ionic.hscrollcards.js",
                 "angular-scroll.min.js",
-                "angular.audio.js"
+                "angular.audio.js",
+                "rzslider.min.js"
                 
 
             ],
