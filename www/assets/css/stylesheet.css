@@ -1950,7 +1950,8 @@ input[type='select'] {
     margin-left: 20px; } }
 
 .section-squares {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .section-squares .one-half, .section-squares .two-quarters, .section-squares .three-sixths, .section-squares .four-eighths, .section-squares .five-tenths, .section-squares .six-twelfths, .section-squares .tabs .tabs__header li, .tabs .tabs__header .section-squares li {
     overflow: auto; }
     .section-squares .one-half .figure__img, .section-squares .two-quarters .figure__img, .section-squares .three-sixths .figure__img, .section-squares .four-eighths .figure__img, .section-squares .five-tenths .figure__img, .section-squares .six-twelfths .figure__img, .section-squares .tabs .tabs__header li .figure__img, .tabs .tabs__header .section-squares li .figure__img {
