@@ -8,16 +8,8 @@
     
     // A.2. END -------------------------------------------------------------------------------------------------------
             
-    .left__aside { margin-top: -$baseline-large;
-    
-        .wrapper { }
-        
-    }
-    .right__aside { margin-top: $baseline;
-    
-        .wrapper { }
-        
-    }
+    .left__aside { margin-top: -$baseline-large; }
+    .right__aside { margin-top: $baseline; margin-bottom: $baseline; }
     
     // A.2. END -------------------------------------------------------------------------------------------------------
 

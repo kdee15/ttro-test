@@ -52,10 +52,10 @@
 
     }
     
-    &.blue { background: $kd-blueNavy; color: $black;
+    &.blue { background: $kd-blueNavy; color: $white;
     
         &:hover,
-        &.active { background: $kd-cyan; }
+        &.active { background: $kd-cyan; color: $black; }
     }
 }
 

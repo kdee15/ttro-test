@@ -14,7 +14,11 @@
 
     .smiley { margin: $baseline auto; }
     
-    .slide-me { margin: $baseline-small auto; max-width: 200px; }
+    .slide-me { margin: $baseline-small auto; max-width: 200px;
+    
+        .rz-bubble { opacity: 0; display: none; }
+    
+    }
     
     a { text-align: center; margin: $baseline auto; display: block; }
 

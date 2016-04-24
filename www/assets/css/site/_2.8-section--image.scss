@@ -42,7 +42,11 @@
 
     //A.1.1. main image
 
-    .figure-pic { 
+    .figure-pic {
+        
+        overflow: hidden;
+        height: 300px;
+        position: relative;
     
         .figure__img { width: auto; height: 300px; position: absolute; right: 0; transform: translateX(30%); }
     
@@ -68,7 +72,11 @@
 
     //A.1.1. main image
 
-    .figure-pic { 
+    .figure-pic {
+        
+        overflow: hidden;
+        height: 400px;
+        position: relative;
     
         .figure__img { width: auto; height: 400px; position: absolute; right: 0; transform: translateX(30%); }
     
@@ -76,7 +84,7 @@
 
     //A.1.2. Main text
 
-    .front__text { margin-top: 55%; padding: $baseline;
+    .front__text { width: auto; bottom: $baseline; left: $baseline; right: $baseline; padding: $baseline-small; 
     
         h1 { font-size: $large; }
         p { font-size: $normal; }
